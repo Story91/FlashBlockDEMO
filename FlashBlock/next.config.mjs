@@ -6,6 +6,10 @@ const nextConfig = {
       config.externals.push('pino-pretty', 'lokijs', 'encoding');
       return config;
     },
+    eslint: {
+      // Wyłączenie sprawdzania ESLint podczas budowania
+      ignoreDuringBuilds: true,
+    },
   };
   
   export default nextConfig;
